@@ -38,3 +38,13 @@ class HomePage(models.Model):
     @property
     def field(self):
         return "body"
+
+
+class Demo(models.Model):
+    "Generated Model"
+    name = models.CharField(
+        max_length=256,
+    )
+
+    class Meta:
+        verbose_name_plural = "Demo"
