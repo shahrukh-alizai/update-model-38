@@ -6,18 +6,26 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('home', '0003_customtext_name'),
+        ("home", "0003_customtext_name"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='Demo',
+            name="Demo",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=256)),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("name", models.CharField(max_length=256)),
             ],
             options={
-                'verbose_name_plural': 'Demo',
+                "verbose_name_plural": "Demo",
             },
         ),
     ]

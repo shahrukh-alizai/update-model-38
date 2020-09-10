@@ -11,9 +11,9 @@ class CustomText(models.Model):
         max_length=150,
     )
     name = models.CharField(
-        max_length=256,
         null=True,
         blank=True,
+        max_length=256,
     )
 
     def __str__(self):
@@ -48,3 +48,13 @@ class Demo(models.Model):
 
     class Meta:
         verbose_name_plural = "Demo"
+
+
+class Student(models.Model):
+    "Generated Model"
+    name = models.CharField(
+        max_length=256,
+    )
+
+    class Meta:
+        verbose_name_plural = "Student"
